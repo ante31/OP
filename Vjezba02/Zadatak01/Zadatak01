@@ -1,1 +1,31 @@
+//Napisati funkciju koja računa najveći i najmanji broj u nizu od n prirodnih
+//brojeva. Funkcija vraća tražene brojeve pomoću referenci.
+#include <iostream>
+using namespace std;
+void max_min(int* arr,int len,int &maxi, int&mini)
+{
+    maxi=arr[0];
+    mini=arr[0];
+    for(int counter=0;counter<len;counter++)
+    {
+        if(arr[counter]>maxi)
+        {
+            maxi=arr[counter];
+        }
+        if(arr[counter]<mini)
+        {
+            mini=arr[counter];
+        }
+    }
+}
+int main(void)
+{
+    int maxi,mini;
+    int niz[]={1,4,6,4,67,2};
+//    cout << "unesite broj clanoiva niza: " << endl;
+//    cin >> len;
+    max_min(niz,6,maxi,mini);
+    cout << maxi << endl;
+    cout << mini << endl;
+}
 
