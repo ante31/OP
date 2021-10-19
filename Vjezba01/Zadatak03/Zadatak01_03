@@ -1,40 +1,28 @@
 #include <iostream>
 using namespace std;
 
-int find_max(int* x, int position, int max)
-{
-    if(position<0)
-        return max;
+int find_largest(int* arr, int arr_size){
+    int maxi=arr[0];
+    for(int i=0; i<arr_size; i++)
+        if(maxi<=arr[i])
+            maxi=arr[i];
 
-    else
-    {
-        if(x[position]>=max)
-            max=x[position];
 
-        return find_max(x, position-1, max);
-    }
+    return maxi;
 }
 
-int find_min(int* x, int position, int min)
+int find_smallest(int* arr, int arr_size)
 {
-    if(position<0)
-        return min;
-
-    else
-    {
-        if(x[position]<=min)
-            min=x[position];
-
-        return find_min(x, position-1, min);
-    }
+    int mini=arr[0];
+    for(int i=0; i<arr_size; i++)
+        if(mini>=arr[i])
+            mini=arr[i];
+    return mini;
 }
 
-
-int main()
-{
-    int x[] = {10, 1, 6, 12, 17, 3};
-    int max = x[0];
-    int min = x[0];
-    cout<<find_max(x, sizeof(x)/sizeof(x[1])-1, max)<<endl;
-    cout<<find_min(x, sizeof(x)/sizeof(x[0])-1, min)<<endl;
+int main(){
+    int arr[6] = {5, 10, 8, 17, 9, 15};
+    cout<< find_largest(arr, sizeof(arr)/sizeof(arr[0])) <<endl;
+    cout<< find_smallest(arr, sizeof(arr)/sizeof(arr[0])) <<endl;
 }
+
