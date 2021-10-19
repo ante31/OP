@@ -1,0 +1,80 @@
+//Definirati strukturu kruznica i strukturu pravokutnik koja predstavlja
+//pravokutnik čije su stranice paralelne sa osima apscisa i ordinata. Napisati
+//funkciju koja prima niz pravokutnika i jednu kruznicu i vraća broj pravokutnika
+//koji sijeku kružnicu. Niz pravokutnika i kružnica šalju se u funkciju pomoću const referenci.
+#include <bits/stdc++.h>
+#include <iostream>
+using namespace std;
+
+struct pravokutnik
+{
+    int x1;
+    int x2;
+    int y1;
+    int y2;
+};
+
+struct kruznica
+{
+    int x;
+    int y;
+    int r;
+};
+
+int funk(pravokutnik *lista_p, kruznica &kr)
+{
+    float distance1, distance2;
+    int podudaranja=0;
+
+    for(int i=0; i<1; i++)
+    {
+
+        distance1 = sqrt(fabsf(pow(lista_p->x1-kr.x, 2) + pow(lista_p->y1-kr.y, 2)));
+        distance2 = sqrt(fabsf(pow(lista_p->x2-kr.x, 2) + pow(lista_p->y2-kr.y, 2)));
+
+        cout<<distance1<<" "<<distance2<<endl;
+
+        if((min(distance1, distance2) <= kr.r )&&(max(distance1, distance2) >= kr.r))
+            podudaranja++;
+    }
+    return podudaranja;
+}
+
+int main()
+{
+    //Alociranje pravokutnika
+    pravokutnik* lista_p = new pravokutnik[3];
+
+    //Deklariranje kruznice
+    kruznica kr;
+int i=1;
+    //Popunjavanje pravokutnika
+    //for(int i=0; i<3; i++)
+    {
+        cout<<i<<". X1:";
+        cin>>lista_p->x1;
+        cout<<i<<". Y1:";
+        cin>>lista_p->y1;
+
+        cout<<i<<". X2:";
+        cin>>lista_p->x2;
+        cout<<i<<". Y2:";
+        cin>>lista_p->y2;
+    }
+    //Popunjavanje kruznice
+
+    cout<<"X:";
+    cin>>kr.x;
+    cout<<"Y:";
+    cin>>kr.y;
+    cout<<"r:";
+    cin>>kr.r;
+
+
+
+
+
+    cout<<funk(lista_p, kr);
+}
+
+
