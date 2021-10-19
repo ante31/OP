@@ -1,0 +1,18 @@
+//Napisati funkciju koja vraća referencu na neki element niza. Koristeći
+//povratnu vrijednost funkcije kao lvalue uvećajte i-ti element niza za jedan
+
+#include <iostream>
+using namespace std;
+
+
+int& get_num(int* niz, int k)
+{
+    return niz[k];
+}
+int main()
+{
+    int niz[]={1, 2, 3, 4, 5};
+    int k=4;
+    get_num(niz, k) = niz[k]+1;
+    cout<<niz[k]<<endl;
+}
