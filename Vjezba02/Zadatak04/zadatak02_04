@@ -1,0 +1,103 @@
+#include <cstddef>
+#include <iostream>
+using namespace std;
+
+
+struct myVector
+{
+    int* arr;
+    int size_of_arr, capacity_of_arr;
+
+    // member functions
+    void vector_new(int sz = 0);
+    void vector_delete();
+    void vector_push_back(int n);/* adds a new element at the end of the vector */
+    void vector_pop_back();/* removes the last element in the vector */
+    int& vector_front();/* returns a reference to the first element in the vector*/
+    int& vector_back(); /* returns a reference to the last element in the vector */
+    int vector_size_of_arr(); /* returns the number of the elements in the vector */
+
+    void print_vector();
+};
+void myVector::vector_new(int sz)
+{
+    arr = new int[sz];
+    size_of_arr = 0;
+    capacity_of_arr = sz;
+}
+void myVector::vector_delete()
+{
+    delete[] arr;
+}
+void myVector::vector_push_back(int n)
+{
+    if (size_of_arr == capacity_of_arr)
+    {
+        capacity_of_arr *= 2;
+        int* arrN = new int[capacity_of_arr];
+        for (int i = 0; i < (capacity_of_arr - 1); i++)
+        {
+            arrN[i] = arr[i];
+        }
+
+        delete[] arr;
+
+        arr = arrN;
+    }
+
+    arr[size_of_arr] = n;
+    size_of_arr++;
+}
+
+
+void myVector::vector_pop_back()
+{
+    size_of_arr -= 1;
+}
+int& myVector::vector_front()
+{
+    return arr[0];
+}
+int& myVector::vector_back()
+{
+    return arr[size_of_arr - 1];
+}
+int myVector::vector_size_of_arr()
+{
+    return size_of_arr;
+}
+void myVector::print_vector()
+{
+    for (int i = 0; i < vector_size_of_arr(); i++)
+        cout << arr[i] << " ";
+    cout << endl;
+}
+
+int main()
+{
+    myVector mv;
+    mv.vector_new(4);
+
+    int m;
+    cout << "Enter elements. For exit enter 0;" << endl;
+    cin >> m;
+    while (m != 0)
+    {
+        mv.vector_push_back(m);
+        cin >> m;
+    }
+
+    mv.print_vector();
+    cout << "First element: " << mv.vector_front() << endl;
+    cout << "Last element: " << mv.vector_back() << endl;
+
+    cout << "Size: " << mv.vector_size_of_arr() << endl;
+    cout << "Capacity: " << mv.capacity_of_arr << endl;
+
+    cout << "Last element removed: " << endl;
+    mv.vector_pop_back();
+    mv.print_vector();
+
+    mv.vector_delete();
+}
+
