@@ -31,8 +31,6 @@ int funk(recktangle *list_of_recktangles, circle &kr)
         distance3 = sqrt(fabsf(pow(list_of_recktangles[i].x2-kr.x, 2) + pow(list_of_recktangles[i].y1-kr.y, 2)));
         distance4 = sqrt(fabsf(pow(list_of_recktangles[i].x1-kr.x, 2) + pow(list_of_recktangles[i].y2-kr.y, 2)));
         
-       
-        cout<<distance1<<" "<<distance2<<endl;
         
         if(((min(distance1, distance2) <= kr.r )&&(max(distance1, distance2) >= kr.r)) || ((min(distance3, distance4) <= kr.r )&&(max(distance3, distance4) >= kr.r)))
             intersections++;
