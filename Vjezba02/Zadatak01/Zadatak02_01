@@ -22,7 +22,7 @@ int main(void)
 {
     int maxi,mini;
     int niz[]={1,4,6,4,67,2};
-//    cout << "unesite broj clanoiva niza: " << endl;
+//    cout << "enter the number of elements in arrey: " << endl;
 //    cin >> len;
     max_min(niz,6,maxi,mini);
     cout << maxi << endl;
