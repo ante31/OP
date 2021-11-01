@@ -1,0 +1,33 @@
+//Napisati funkciju u za uklanjanje elementa iz vektora sa što manje operacija. Poredak elemenata u vektoru nije bitan
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+
+using namespace std;
+
+void vector_popback(vector <int>& v1, int element_to_delete)
+{
+    int lenght = v1.size();
+    int temp = v1[element_to_delete];
+    v1[element_to_delete] = v1[lenght - 1];
+    v1[lenght - 1] = v1[element_to_delete];
+    v1.pop_back();
+}
+
+void vector_printout(vector <int> v1)
+{
+    for (int i = 0; i < v1.size(); i++)
+        cout << v1[i] << endl;
+    cout << endl;
+}
+
+
+int main()
+{
+    int element_to_delete = 3;
+    vector <int> v1 = { 2, 4, 6, 8, 10 };
+    vector_popback(v1, element_to_delete);
+    vector_printout(v1);
+}
