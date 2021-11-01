@@ -1,0 +1,27 @@
+//Napisati funkciju u za uklanjanje elementa iz vektora sa što manje operacija. Poredak elemenata u vektoru nije bitan
+
+#include <iostream>
+#include <vector>
+#include <string> 
+
+using namespace std;
+
+int substring_finder(string main_string, string substring)
+{
+    int occurrences = 0;
+    int position = 0;
+    while ((position = main_string.find(substring, position)) != string::npos)
+    {
+        occurrences++;
+        position += substring.length();
+    }
+    return occurrences;
+}
+
+int main()
+{
+    string main_string = "There are two needles in this haystack with needles.";
+    string substring = "needle";
+    
+    cout << substring_finder(main_string, substring) << endl;
+}
