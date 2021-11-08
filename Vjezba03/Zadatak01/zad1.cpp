@@ -1,5 +1,3 @@
-//Napišite funkciju koja stringove, koje korisnik unosi, sprema u vektor stingova,
-//svaki string preokrene te sortira vektor po preokrenutim stringovima
 #include "zadatak01.h"
 
 #include <iostream>
