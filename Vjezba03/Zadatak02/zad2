@@ -45,7 +45,7 @@ void new_vector(vector<int> v, vector <int> v1, vector <int>& v2)
 				break;
 			}
 		}
-		if (counter>=1)
+		if (counter==1)
 		{
 			v2.push_back(v[i]);
 		}
