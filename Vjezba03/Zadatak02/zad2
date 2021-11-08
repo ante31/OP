@@ -1,67 +1,83 @@
-//Napišite funkciju koja stringove, koje korisnik unosi, sprema u vektor stingova,
-//svaki string preokrene te sortira vektor po preokrenutim stringovima
-
+/*Koristeći funkcije iz prvog zadatka unijeti dva vektora i formirati novi vektor koji
+se sastoji od elemenata iz prvog vektora koji nisu u drugom vektoru*/
 #include <iostream>
 #include <vector>
-#include <algorithm>
-
+#include <string>
 
 using namespace std;
 
-void vector_number(vector <int> &v1, int n)
+void input_vector(vector<int>& v, int el)
 {
-    int num;
-    for (int i = 0; i < n; i++)
-    {
-        cin >> num;
-        v1.push_back(num);
-    }
+	int n;
+	cout << "enter the members of the array: " << endl;
+	for (int i = 0; i < el; i++)
+	{
+		cin >> n;
+		v.push_back(n);
+	}
 }
-
-void vector_interval(vector <int>& v1, int a, int b)
+void input_vector1(vector<int>& v, int a, int b)
 {
-    int num;
-    cin >> num;
-    while ((num >= a) && (num <= b))
-    {
-        v1.push_back(num);
-        cin >> num;
-    }
+	cout << "enter the members of the array " << endl;
+	int n;
+	for (;;)
+	{
+		cin >> n;
+		if (n >= a && n <= b)
+		{
+			v.push_back(n);
+		}
+		else
+			break;
+	}
 }
-
-void vector_printout(vector <int> v1)
+void new_vector(vector<int> v, vector <int> v1, vector <int>& v2)
 {
-    for (int i = 0; i < v1.size(); i++)
-        cout << v1[i] << endl;
-    cout << endl;
+	int size_v = v.size();
+	int size_v1 = v1.size();
+	for (int i = 0; i < size_v; i++)
+	{
+		int counter =1;
+		for (int j = 0; j < size_v1; j++)
+		{
+			if (v[i] == v1[j])
+			{
+				counter =0;
+				break;
+			}
+		}
+		if (counter>=1)
+		{
+			v2.push_back(v[i]);
+		}
+	}
 }
-
-void vector_new(vector <int> v1, vector <int> v2, vector <int>& v3)
+void output_vector(vector<int> v)
 {
-    int condition;
-    for (int i = 0; i < v1.size(); i++) {
-        condition = 1;
-        for (int j = 0; j < v2.size(); j++) {
-            if (v1[i] == v2[j]) {
-                condition = 0;
-                break;
-            }
-        }
-        if (condition)
-            v3.push_back(v1[i]);
-    }
+	for (int i = 0; i < v.size(); i++)
+	{
+		cout << v[i] << " ";
+	}
 }
-
-int main()
+int main(void)
 {
-    vector <int> v1, v2, v3;
-    vector_number(v1, 3);
-    vector_interval(v1, 1, 10);
-    vector_number(v2, 3);
-    vector_interval(v2, 1, 10);
-    vector_new(v1, v2, v3);
+	vector<int> v, v1, v2;
+	int el, a, b;
+	cout << "enter the number of members: " << endl;
+	cin >> el;
+	input_vector(v, el);
+	cout << "first array ";
+	output_vector(v);
+	cout << endl;
+	cout << "enter the size limits of the members of the array: " << endl;
+	cin >> a >> b;
+	input_vector1(v1, a, b);
+	cout << "second array ";
+	output_vector(v1);
+	cout << endl << endl;
+	new_vector(v, v1, v2);
+	cout << "new array with elements of first array without elements of the second array ->  ";
+	output_vector(v2);
+	return 0;
 
-    vector_printout(v1);
-    vector_printout(v2);
-    vector_printout(v3);
 }
