@@ -20,15 +20,14 @@ void input_vector1(vector<int>& v, int a, int b)
 {
 	cout << "enter the members of the array " << endl;
 	int n;
-	for (;;)
+	while(1)
 	{
 		cin >> n;
-		if (n >= a && n <= b)
+		if (n <= a && n >= b)
 		{
-			v.push_back(n);
-		}
-		else
 			break;
+		}
+		v.push_back(n);	
 	}
 }
 void new_vector(vector<int> v, vector <int> v1, vector <int>& v2)
