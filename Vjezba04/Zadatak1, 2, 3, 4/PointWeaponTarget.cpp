@@ -17,9 +17,14 @@ Point Point::setToRandom(Point p, double a, double b) {
 	p.z = (b - a) * ((((double)rand()) / (double)RAND_MAX)) + a;
 	return p;
 };
-double* Point::getValue(Point p) {
-	double pValues[] = { p.x, p.y, p.z };
-	return pValues;
+double* Point::getValueX(Point p) {
+	return p.x;
+};
+double* Point::getValueY(Point p) {
+	return p.y;
+};
+double* Point::getValueZ(Point p) {
+	return p.z;
 };
 double Point::distance2D(Point p1, Point p2) {
 	double dx = p1.x - p2.x;
