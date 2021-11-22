@@ -13,7 +13,9 @@ public:
 
 	Point setToZero(Point p);
 	Point setToRandom(Point p, double a, double b);
-	double* getValue(Point p);
+	double* getValueX(Point p);
+	double* getValueY(Point p);
+	double* getValueZ(Point p);
 	double distance2D(Point p1, Point p2);
 	double distance3D(Point p1, Point p2);
 };
