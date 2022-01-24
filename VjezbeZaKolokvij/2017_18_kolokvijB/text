@@ -1,9 +1,11 @@
 1. Napisati klasu razlomak. Napisati funkciju koja puni vektor razlomaka iz datoteke, te sve elemente vektora
 skrati. Za punjenje vektora i skraćivanje koristiti funkcije standardne biblioteke.
+
 2. Napisati apstraktnu klasu Quad koja predstavlja četverokut zadan sa četiri stranice i funkcije za opseg
 i površinu. Stranice četverokuta su privatne varijable. Napisati izvedene klase za kvadrat i pravokutnik
 i potrebne funkcije. Napisati funkciju koja za vektor četverokuta računa onaj najveće površine. U main
 funkciji napuniti vektor pravokutnicima i kvadratima te ispisati duljine stranica i vrst četverokuta najveće
 površine.
+
 3. Napisati funkciju count_letter koja prima jedan po jedan znak sa ulaza. Funkcija broji broj samoglasnika
 i suglasnika i baca iznimku u slučaju da je unesen znak koji nije slovo.
