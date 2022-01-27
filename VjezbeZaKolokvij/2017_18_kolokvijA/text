@@ -1,0 +1,14 @@
+1. U datoteci su dane koordinate točaka (x, y, z) tako da je u svakom redu jedna točka. Napisati program
+koji transformira sve z-koordinate primjenjujući funkciju fun(x, y, z) gdje je fun funkcija
+
+fun(x, y, z) = z + x2 + y2
+
+te nove koordinate zapisuje u drugu datoteku. Operacije transformiranja i čitanja i pisanja u datoteku
+realizirati koristeći standardnu biblioteku.
+
+2. Napisati template klasu za skup. U klasi treba biti omogućeno dodavanje elemenata u skup, brisanje svih
+elemenata skupa, presjek i unija s drugim skupom.
+
+3. Napisati funkciju koja prima vektor brojeva, te računa korijen i logaritam broja. Funkcija baca iznimku ako
+matematička operacija nije validna (korijen se može izračunati samo za nenegativne brojeve, a logaritam
+samo za strogo pozitivne brojeve).
