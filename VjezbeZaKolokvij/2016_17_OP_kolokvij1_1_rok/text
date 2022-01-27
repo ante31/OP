@@ -1,0 +1,30 @@
+1. (20) Napišite klasu money i potrebne operatore tako da bi sljede´ci program:
+int main ()
+{
+money papers (6 , 50) , coffee (5 , 70) , sugar (1) ;
+money bill ;
+bill = papers + coffee + sugar ;
+std :: cout << " Total : " << bill << std :: endl ;
+}
+ispisivao:
+Total : 13 kuna , 20 lipa
+
+2. (15) Napišite funkciju koja stringove, koje korisnik unosi, sprema u vektor stingova, svaki string preokrene
+te sortira vektor po preokrenutim stringovima.
+
+3. (15) Proširite klasu
+class array { int n ; string * arr ; }
+tako da sljede´ci program
+int main ()
+{
+int n = 3;
+string s [] = {" usr " , " lib " , " home " };
+array a( n);
+for (int i = 0; i < n; ++ i)
+a. append (i , s[ i ]) ;
+cout << a ;
+}
+ispisuje
+../ usr
+../ lib
+../ home
