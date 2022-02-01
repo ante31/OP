@@ -3,7 +3,7 @@ Napišite template klasu Stack. Implementirajte funkcije članove za operacije
 push, pop i is_empty.
 Napomena: Odvojite sučelje i implementaciju u različite .cpp i .h datoteke.
 */
-#include "starck.h"
+#include "stack.h"
 #include <iostream>
 
 using namespace std;
