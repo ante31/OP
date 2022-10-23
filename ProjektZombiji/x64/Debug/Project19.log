@@ -1,0 +1,175 @@
+﻿  game.cpp
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.h(17,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.h(17,36): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.h(19,1): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.h(49,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.h(50,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.h(50,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.h(90,36): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.h(90,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.h(92,54): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.h(104,36): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.h(104,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.h(106,54): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.h(119,36): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.h(119,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.h(121,54): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.h(125,36): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.h(126,36): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(59,461): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(59,234): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(59,128): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(59,55): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(70,96): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(71,96): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(75,96): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(76,96): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(85,95): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(86,95): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(95,526): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(95,266): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(95,144): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(95,61): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(104,33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(105,43): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(119,20): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(121,51): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(122,51): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(123,47): warning C4244: '=': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(125,54): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(126,54): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(138,48): warning C4244: '=': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(139,48): warning C4244: '=': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(140,47): warning C4244: '=': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(142,51): warning C4244: '=': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(143,51): warning C4244: '=': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(158,50): warning C4244: '=': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(159,50): warning C4244: '=': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(160,49): warning C4244: '=': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(162,51): warning C4244: '=': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(163,51): warning C4244: '=': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(193,15): warning C4244: 'initializing': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(193,61): warning C4244: 'initializing': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(193,110): warning C4244: 'initializing': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(196,48): warning C4244: '=': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(197,48): warning C4244: '=': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(207,48): warning C4244: '=': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(208,48): warning C4244: '=': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(218,55): warning C4244: '=': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(219,55): warning C4244: '=': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(247,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(248,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\game.cpp(249,38): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Project19.vcxproj -> C:\Users\antem\OneDrive\Dokumenti\kod\ProjectGame\Project19\x64\Debug\Project19.exe
